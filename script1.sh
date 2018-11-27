@@ -35,6 +35,7 @@ cp -r * $DOC/
 echo
 systemctl restart $SVC
 echo
+echo "get IPADDRESS"
 ip addr
 echo
 echo "Competed"
