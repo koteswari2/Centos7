@@ -6,31 +6,40 @@ echo "Enter USERNAME:"
 read -p 'User Name:'= User
 echo -n 'Enter Age:'=
 read n
+
 if [ $n -gt 60 ]
 then
 echo "$User is Senior"
-else
-echo "$User is under 60"
+echo "$User is not eligible to work"
 fi
+
 echo
+
+if [ $n -lt 60 ]
+then
+echo "$User is eligible to work"
+fi
+
+echo
+
 echo "Enter $User's current Location"
 read -p 'Location:'= Location
+
 for I in $Location
 do 
 echo "$User is now in $I"
 sleep 3
 done
+
 echo
+
 echo "Enter $User's Native Place:"
 read -p 'Location:'= Location
 echo "$User's native Place is $Location"
 echo
-#for I in Macherla
-#do
-#echo "$User from $I"
 sleep 3
-#done
 echo
+
 echo "Enter $User's work Location:"
 read -p 'Location'=
 for I in $Location
@@ -38,5 +47,6 @@ do
 echo "$User working in $I"
 sleep 3
 done
+
 echo
 echo "Thanks for your inputs"
