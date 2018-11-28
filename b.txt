@@ -4,3 +4,13 @@ do
 echo "I like $FRUITS and I eat $FRUITS"
 sleep 3
 done
+#########################################
+cat /etc/redhat-release
+
+if [ $? -eq 0 ]
+then 
+   yum update -y
+elif [ $? > 0 ]
+then
+   echo "it's not a REDHAT Family"
+fi
