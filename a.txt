@@ -5,7 +5,6 @@ echo "IF EXAAMPLE"
 echo "##################################"
 echo "Enter your name $user"
 read -p 'Name:' user
-
 echo -n "Enter Age: " 
 read n
 

@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Number of Process"
+PROCESS='ps -ef'
+for i in $PROCESS | awk '{print $3}'
+do 
+ if [ $i -gt 0 ]
+  then 
+ echo "process is running"
+done
+echo "#########################"
+echo -n "Total Nummber of Process:"
+$PROCESS | wc -l

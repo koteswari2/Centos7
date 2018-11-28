@@ -1,0 +1,6 @@
+#!/bin/bash
+for FRUITS in apple banana mango guava papay grappes
+do
+echo "I like $FRUITS and I eat $FRUITS"
+sleep 3
+done
