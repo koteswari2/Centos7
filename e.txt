@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo "Back up Script"
 echo "#######################"
 #SOURCEDIRLOG='/var/log/log.d/'
