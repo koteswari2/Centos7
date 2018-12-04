@@ -20,7 +20,7 @@ count = 101
 while (count > 100):
  print "Numbers are:",count
  count=count+1
- if count == 555:
+ if count == 111:
    break
 for word in 'Python':
  if word == 't':
@@ -34,3 +34,14 @@ while a>0:
    continue
  print 'current variable value:',a
 print "Execution completed!"
+
+for word in "DevOps":
+  print "Value of word is " + " " + word
+
+for Places in ['Hyderabad', 'Pune', 'Chennai', 'Bangalore']:
+  print "%s are Metropolitean city" % (Places)
+
+fruits = ["Mango", "Apple", "Grappes"]
+for i in range (len(fruits)):
+  print "Value of i is " + str(i)
+
