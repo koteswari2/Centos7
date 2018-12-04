@@ -1,5 +1,5 @@
 #!/bin/python
-print "What is your Name?"
+%print "What is your Name?"
 Name = raw_input()
 print "How old are you?"
 age = raw_input()

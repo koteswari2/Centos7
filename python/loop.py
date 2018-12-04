@@ -45,3 +45,19 @@ fruits = ["Mango", "Apple", "Grappes"]
 for i in range (len(fruits)):
   print "Value of i is " + str(i)
 
+#n = raw_input()
+for i in range(10):
+ print "Value of i is %d" %i
+ if i == 5:
+  print "we are at 5"
+  break
+
+a = 0
+b = 20
+
+while a < b:
+  print "%s is the value of a and less than %s " %(a,b)
+  print "######################################################"
+  a = a + 1
+
+print "Out of the loop"
