@@ -69,28 +69,8 @@ else:
 
 #WHILE LOOP
 
-num=110
-while num>100:
- print 'Hello',num
- num=num+1
- if num==555:
-    break
-print "Break test completed"
+n=o
+while (n=100):
 
-count = 0
-while count<19:
- count=count+1
- if count==10:
-   continue
- print 'value is:',count
-print "bye"
-
-a =  10
-while a>0:
- a=a-1
- if a==5:
-   continue
- print 'current value is:',a
-print "bye!!!"
-  
-
+print "Hello"
+  n=n+1
