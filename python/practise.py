@@ -43,3 +43,16 @@ print dict2
 print dict2.keys()
 print dict2.values()
 
+a=10
+b=20
+
+if (a==b):
+ print "a is equal to b"
+else:
+ print "a is equal to b"
+if (a!=b):
+ print "a is not equalto b"
+if (a>b):
+ print "a is greater than b"
+if (a<b):
+ print "a is lesthan b"
