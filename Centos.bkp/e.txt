@@ -1,0 +1,32 @@
+#!/bin/bash
+echo "Back up Script"
+echo "#######################"
+#SOURCEDIRLOG='/var/log/log.d/'
+#DESTINATION='/tmp/log.bkp/'
+read -p SOURCEDIRLOG
+for i in `cat $SOURCEDIRLOG/bkp.txt`
+#read DESTINATION
+#echo "Enter SOURCEDIRLOG: "
+#echo "Enter DESTINATION: "
+#for i in `cat $SOURCEDIRLOG/bkp.txt`
+do  
+if [ -d $SOURCEDIRLOG/$i ]
+    then 
+   echo "Log $SOURCEDIRLOG/$i present and taking bkp"
+   echo "$i is taking backup"
+   echo
+read -p DESTINATION
+echo "Enter DESTINATION: "
+   cp -R $SOURCEDIRLOG/$i $DESTINATION
+   echo
+   echo "Start Archieve"
+   echo "************"
+   tar cfvz logbkp.tgz $DESTINATION/$i
+   echo "$i is successfully completed"
+  echo
+  sleep 5
+  else 
+echo
+echo "NO LOG $i DIR and Skipping.."
+fi
+done 

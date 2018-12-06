@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "IF EXAAMPLE"
+
+echo "##################################"
+echo "Enter your name $user"
+read -p 'Name:' user
+echo -n "Enter Age: " 
+read n
+
+if [ $n -gt 60 ]
+then
+   echo
+   echo "Person is a Senior"
+elif [ $n -lt 60 ]
+then 
+   echo "Person is Not a Senior"
+fi
