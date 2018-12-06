@@ -1,5 +1,0 @@
-#!/bin/sh
-for i in `cat names.txt`;do
-echo "print name"
-echo $i
-done

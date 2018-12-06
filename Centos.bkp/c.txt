@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "Number of Process"
-PROCESS='ps -ef'
-$PROCESS | awk '{print $3}'
-echo "#########################"
-echo -n "Total Nummber of Process:"
-$PROCESS | wc -l
